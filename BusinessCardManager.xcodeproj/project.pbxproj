@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98088F8A28E4AAAF002089D8 /* BusinessCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98088F8928E4AAAF002089D8 /* BusinessCardTableViewController.swift */; };
+		98088F8E28E4AFBF002089D8 /* BusinessCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98088F8C28E4AFBF002089D8 /* BusinessCardTableViewCell.swift */; };
+		98088F8F28E4AFBF002089D8 /* BusinessCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98088F8D28E4AFBF002089D8 /* BusinessCardTableViewCell.xib */; };
 		9830A3CB28E3E10100BD51AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3CA28E3E10100BD51AA /* AppDelegate.swift */; };
 		9830A3CD28E3E10100BD51AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3CC28E3E10100BD51AA /* SceneDelegate.swift */; };
 		9830A3CF28E3E10100BD51AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3CE28E3E10100BD51AA /* ViewController.swift */; };
@@ -17,6 +20,8 @@
 		9830A3E528E3E10200BD51AA /* BusinessCardManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3E428E3E10200BD51AA /* BusinessCardManagerTests.swift */; };
 		9830A3EF28E3E10200BD51AA /* BusinessCardManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3EE28E3E10200BD51AA /* BusinessCardManagerUITests.swift */; };
 		9830A3F128E3E10200BD51AA /* BusinessCardManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3F028E3E10200BD51AA /* BusinessCardManagerUITestsLaunchTests.swift */; };
+		9830A40028E3F66D00BD51AA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3FF28E3F66D00BD51AA /* MainViewController.swift */; };
+		9830A40228E3F6E100BD51AA /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A40128E3F6E100BD51AA /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98088F8928E4AAAF002089D8 /* BusinessCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewController.swift; sourceTree = "<group>"; };
+		98088F8C28E4AFBF002089D8 /* BusinessCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewCell.swift; sourceTree = "<group>"; };
+		98088F8D28E4AFBF002089D8 /* BusinessCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessCardTableViewCell.xib; sourceTree = "<group>"; };
 		9830A3C728E3E10100BD51AA /* BusinessCardManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessCardManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9830A3CA28E3E10100BD51AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9830A3CC28E3E10100BD51AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,8 @@
 		9830A3EA28E3E10200BD51AA /* BusinessCardManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessCardManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9830A3EE28E3E10200BD51AA /* BusinessCardManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardManagerUITests.swift; sourceTree = "<group>"; };
 		9830A3F028E3E10200BD51AA /* BusinessCardManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9830A3FF28E3F66D00BD51AA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9830A40128E3F6E100BD51AA /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98088F8B28E4AF80002089D8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98088F8C28E4AFBF002089D8 /* BusinessCardTableViewCell.swift */,
+				98088F8D28E4AFBF002089D8 /* BusinessCardTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		9830A3BE28E3E10100BD51AA = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +120,7 @@
 		9830A3C928E3E10100BD51AA /* BusinessCardManager */ = {
 			isa = PBXGroup;
 			children = (
+				9830A3FD28E3F55F00BD51AA /* Views */,
 				9830A3CA28E3E10100BD51AA /* AppDelegate.swift */,
 				9830A3CC28E3E10100BD51AA /* SceneDelegate.swift */,
 				9830A3CE28E3E10100BD51AA /* ViewController.swift */,
@@ -128,6 +148,25 @@
 				9830A3F028E3E10200BD51AA /* BusinessCardManagerUITestsLaunchTests.swift */,
 			);
 			path = BusinessCardManagerUITests;
+			sourceTree = "<group>";
+		};
+		9830A3FD28E3F55F00BD51AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9830A3FE28E3F56900BD51AA /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9830A3FE28E3F56900BD51AA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				98088F8B28E4AF80002089D8 /* Cell */,
+				9830A3FF28E3F66D00BD51AA /* MainViewController.swift */,
+				9830A40128E3F6E100BD51AA /* MainPageViewController.swift */,
+				98088F8928E4AAAF002089D8 /* BusinessCardTableViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +276,7 @@
 				9830A3DA28E3E10200BD51AA /* LaunchScreen.storyboard in Resources */,
 				9830A3D728E3E10200BD51AA /* Assets.xcassets in Resources */,
 				9830A3D228E3E10100BD51AA /* Main.storyboard in Resources */,
+				98088F8F28E4AFBF002089D8 /* BusinessCardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9830A3CF28E3E10100BD51AA /* ViewController.swift in Sources */,
+				98088F8A28E4AAAF002089D8 /* BusinessCardTableViewController.swift in Sources */,
 				9830A3CB28E3E10100BD51AA /* AppDelegate.swift in Sources */,
+				98088F8E28E4AFBF002089D8 /* BusinessCardTableViewCell.swift in Sources */,
 				9830A3D528E3E10100BD51AA /* BusinessCardManager.xcdatamodeld in Sources */,
 				9830A3CD28E3E10100BD51AA /* SceneDelegate.swift in Sources */,
+				9830A40228E3F6E100BD51AA /* MainPageViewController.swift in Sources */,
+				9830A40028E3F66D00BD51AA /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
