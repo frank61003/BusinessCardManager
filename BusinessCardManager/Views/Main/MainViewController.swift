@@ -8,30 +8,38 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
     var mainPageViewController: MainPageViewController?
+    
+    @IBOutlet weak var businessCardTypeSegment: UISegmentedControl!
+    @IBAction func changeContainerView(_ sender: UISegmentedControl) {
+        mainPageViewController?.setViewController(page: sender.selectedSegmentIndex)
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
         if let mainPageViewController = segue.destination as? MainPageViewController {
             self.mainPageViewController = mainPageViewController
             // 代理 pageViewController
-            
-//            guard let companyCollectionViewController = self.storyboard?.instantiateViewController(withIdentifier: "CompanyCollectionViewController") as? CompanyCollectionViewController, let searchProductViewController = self.storyboard?.instantiateViewController(withIdentifier: "SearchProductViewController") as? SearchProductViewController else { return }
-//            
-//            self.productPageViewController?.viewControllerArray = [searchProductViewController, companyCollectionViewController]
-//            
-//            self.productPageViewController?.pageViewControllerDelegate = self
+            self.mainPageViewController?.pageViewControllerDelegate = self
             
         }
          
     }
     
-
+}
+extension MainViewController: PageViewControllerDelegate{
+    
+    func pageViewController(didUpdatePageIndex pageIndex: Int) {
+        businessCardTypeSegment.selectedSegmentIndex = pageIndex
+       
+        
+    }
 }

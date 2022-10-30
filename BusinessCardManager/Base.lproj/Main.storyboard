@@ -28,35 +28,6 @@
             <point key="canvasLocation" x="287" y="68"/>
         </scene>
         <!--Root View Controller-->
-        <scene sceneID="N1A-7y-9No">
-            <objects>
-                <tableViewController id="baw-OJ-ZVs" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wQ0-8a-nL8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Nu2-lV-nvT">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nu2-lV-nvT" id="L5V-tK-QST">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="baw-OJ-ZVs" id="hJL-YW-cMj"/>
-                            <outlet property="delegate" destination="baw-OJ-ZVs" id="h5s-5G-QXz"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="LZw-Ss-qDy"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RHp-cb-9iQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2381" y="488"/>
-        </scene>
-        <!--Root View Controller-->
         <scene sceneID="i8W-Vq-wxP">
             <objects>
                 <tableViewController id="4qy-zs-Dm2" sceneMemberID="viewController">
@@ -83,13 +54,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHL-z5-y5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2455" y="1389"/>
+            <point key="canvasLocation" x="2730" y="1775"/>
         </scene>
-        <!--Item-->
+        <!--設定-->
         <scene sceneID="Ofd-pD-cQy">
             <objects>
                 <navigationController id="6Wn-BX-u1P" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yhg-tq-Bax"/>
+                    <tabBarItem key="tabBarItem" title="設定" image="wrench" catalog="system" id="yhg-tq-Bax"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fr4-Jd-89W">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -100,30 +71,46 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oyo-q9-vbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="1389"/>
+            <point key="canvasLocation" x="1354" y="1775"/>
         </scene>
-        <!--Item-->
+        <!--地圖-->
         <scene sceneID="U1f-ED-WYm">
             <objects>
                 <navigationController id="HX9-fu-B9H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SLE-Zq-Qxq"/>
+                    <tabBarItem key="tabBarItem" title="地圖" image="map" catalog="system" id="SLE-Zq-Qxq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8KI-ua-1Tv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="baw-OJ-ZVs" kind="relationship" relationship="rootViewController" id="Xxf-u2-MNX"/>
+                        <segue destination="bPs-iW-TUl" kind="relationship" relationship="rootViewController" id="1Rg-Vc-Ozi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RlN-0G-C5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="488"/>
+            <point key="canvasLocation" x="1481" y="825"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
+        <scene sceneID="OSV-QN-Pzf">
+            <objects>
+                <viewController id="bPs-iW-TUl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2d-8k-Tti">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OsD-gz-6Av"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nIF-cS-lby"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1z-je-bGu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2465" y="840"/>
+        </scene>
+        <!--名片-->
         <scene sceneID="lgJ-R6-4A0">
             <objects>
                 <navigationController id="AUK-l2-0b8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hI7-c8-4fg"/>
+                    <tabBarItem key="tabBarItem" title="名片" image="creditcard.and.123" catalog="system" id="hI7-c8-4fg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6cN-go-Q6d">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -136,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="1354" y="-196"/>
         </scene>
-        <!--View Controller-->
+        <!--名片-->
         <scene sceneID="wo0-dS-QWQ">
             <objects>
-                <viewController id="5CT-ad-FMD" sceneMemberID="viewController">
+                <viewController id="5CT-ad-FMD" customClass="MainViewController" customModule="BusinessCardManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSx-0U-r2Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,21 +137,39 @@
                                     <segue destination="u79-22-k4f" kind="embed" id="EwS-YM-ovP"/>
                                 </connections>
                             </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rGS-Nh-30N">
+                                <rect key="frame" x="0.0" y="99" width="414" height="32"/>
+                                <segments>
+                                    <segment title="全部"/>
+                                    <segment title="公司"/>
+                                    <segment title="餐廳"/>
+                                    <segment title="其他"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeContainerView:" destination="5CT-ad-FMD" eventType="valueChanged" id="Wn3-Ty-cNE"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Yxx-em-K34"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Yxx-em-K34" firstAttribute="trailing" secondItem="rGS-Nh-30N" secondAttribute="trailing" id="CwT-sm-iyu"/>
                             <constraint firstItem="9Mw-HN-Uoo" firstAttribute="leading" secondItem="Yxx-em-K34" secondAttribute="leading" id="RsX-Bg-WRP"/>
+                            <constraint firstItem="9Mw-HN-Uoo" firstAttribute="top" secondItem="rGS-Nh-30N" secondAttribute="bottom" constant="8" symbolic="YES" id="dIo-jR-3NO"/>
+                            <constraint firstItem="rGS-Nh-30N" firstAttribute="top" secondItem="Yxx-em-K34" secondAttribute="top" constant="11" id="fK1-7f-dWm"/>
+                            <constraint firstItem="rGS-Nh-30N" firstAttribute="leading" secondItem="Yxx-em-K34" secondAttribute="leading" id="j78-46-cRm"/>
                             <constraint firstItem="Yxx-em-K34" firstAttribute="bottom" secondItem="9Mw-HN-Uoo" secondAttribute="bottom" id="kHo-G4-h5y"/>
-                            <constraint firstItem="9Mw-HN-Uoo" firstAttribute="top" secondItem="Yxx-em-K34" secondAttribute="top" constant="50" id="omr-fa-O3Z"/>
                             <constraint firstItem="Yxx-em-K34" firstAttribute="trailing" secondItem="9Mw-HN-Uoo" secondAttribute="trailing" id="pGz-lg-MOF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="UWV-Ap-1er"/>
+                    <navigationItem key="navigationItem" title="名片" id="UWV-Ap-1er"/>
+                    <connections>
+                        <outlet property="businessCardTypeSegment" destination="rGS-Nh-30N" id="IXU-UG-QKL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAO-Tx-sCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2311.594202898551" y="-196.20535714285714"/>
+            <point key="canvasLocation" x="2496" y="-196"/>
         </scene>
         <!--Main Page View Controller-->
         <scene sceneID="Q8j-y3-0ld">
@@ -172,7 +177,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="u79-22-k4f" customClass="MainPageViewController" customModule="BusinessCardManager" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nap-s7-20z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3345" y="-146"/>
+            <point key="canvasLocation" x="3341" y="-183"/>
         </scene>
         <!--Business Card Table View Controller-->
         <scene sceneID="WUd-hR-hbB">
@@ -203,10 +208,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fds-wW-dG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4271.0144927536239" y="-179.46428571428569"/>
+            <point key="canvasLocation" x="4149" y="-209"/>
         </scene>
     </scenes>
     <resources>
+        <image name="creditcard.and.123" catalog="system" width="128" height="90"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="wrench" catalog="system" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
