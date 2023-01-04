@@ -11,7 +11,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="UVL-Hr-xkd">
             <objects>
-                <tabBarController id="sXU-pK-ivv" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" id="sXU-pK-ivv" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tgm-f0-u1R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,35 +27,6 @@
             </objects>
             <point key="canvasLocation" x="287" y="68"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="i8W-Vq-wxP">
-            <objects>
-                <tableViewController id="4qy-zs-Dm2" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Ug2-0Y-xxg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YhM-KB-u0e">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YhM-KB-u0e" id="Q8R-bU-iTk">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="4qy-zs-Dm2" id="ePQ-hr-Qgf"/>
-                            <outlet property="delegate" destination="4qy-zs-Dm2" id="UR8-R5-i07"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Ja0-UT-COd"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dHL-z5-y5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2730" y="1775"/>
-        </scene>
         <!--設定-->
         <scene sceneID="Ofd-pD-cQy">
             <objects>
@@ -66,12 +37,42 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="4qy-zs-Dm2" kind="relationship" relationship="rootViewController" id="lou-md-Dgp"/>
+                        <segue destination="8oh-O4-Fz0" kind="relationship" relationship="rootViewController" id="3nR-Ez-jfg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oyo-q9-vbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1354" y="1775"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="lDK-zz-8ds">
+            <objects>
+                <viewController id="8oh-O4-Fz0" customClass="SettingViewController" customModule="BusinessCardManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oUh-al-cVt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8V-zs-bPv">
+                                <rect key="frame" x="180.5" y="686" width="53" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="登出"/>
+                                <connections>
+                                    <action selector="LogutBtn:" destination="8oh-O4-Fz0" eventType="touchUpInside" id="5Tq-g8-eTd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hD8-cY-cUZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W8V-zs-bPv" firstAttribute="centerX" secondItem="hD8-cY-cUZ" secondAttribute="centerX" id="wwp-bh-ZM1"/>
+                            <constraint firstItem="hD8-cY-cUZ" firstAttribute="bottom" secondItem="W8V-zs-bPv" secondAttribute="bottom" constant="96" id="xge-Pz-P29"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sy6-Tt-t2v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AX1-Bn-OCC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2496" y="1775"/>
         </scene>
         <!--地圖-->
         <scene sceneID="U1f-ED-WYm">

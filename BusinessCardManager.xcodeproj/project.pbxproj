@@ -10,6 +10,9 @@
 		98088F8A28E4AAAF002089D8 /* BusinessCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98088F8928E4AAAF002089D8 /* BusinessCardTableViewController.swift */; };
 		98088F8E28E4AFBF002089D8 /* BusinessCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98088F8C28E4AFBF002089D8 /* BusinessCardTableViewCell.swift */; };
 		98088F8F28E4AFBF002089D8 /* BusinessCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98088F8D28E4AFBF002089D8 /* BusinessCardTableViewCell.xib */; };
+		9825C6D5290E9AD800CCB822 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9825C6D4290E9AD800CCB822 /* Login.storyboard */; };
+		9825C6D7290E9B3F00CCB822 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825C6D6290E9B3F00CCB822 /* LoginViewController.swift */; };
+		9825C6D9290E9C3800CCB822 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825C6D8290E9C3800CCB822 /* SignUpViewController.swift */; };
 		9830A3CB28E3E10100BD51AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3CA28E3E10100BD51AA /* AppDelegate.swift */; };
 		9830A3CD28E3E10100BD51AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3CC28E3E10100BD51AA /* SceneDelegate.swift */; };
 		9830A3CF28E3E10100BD51AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3CE28E3E10100BD51AA /* ViewController.swift */; };
@@ -22,6 +25,12 @@
 		9830A3F128E3E10200BD51AA /* BusinessCardManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3F028E3E10200BD51AA /* BusinessCardManagerUITestsLaunchTests.swift */; };
 		9830A40028E3F66D00BD51AA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A3FF28E3F66D00BD51AA /* MainViewController.swift */; };
 		9830A40228E3F6E100BD51AA /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830A40128E3F6E100BD51AA /* MainPageViewController.swift */; };
+		984F09952965115C009A289C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984F09942965115C009A289C /* SettingViewController.swift */; };
+		98A72701290E7E26006ECD5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98A72700290E7E26006ECD5D /* GoogleService-Info.plist */; };
+		98A72704290E9091006ECD5D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 98A72703290E9091006ECD5D /* FirebaseAnalytics */; };
+		98A72706290E9091006ECD5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 98A72705290E9091006ECD5D /* FirebaseAuth */; };
+		98CACFC12951D3DD00DEFB7C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 98CACFC02951D3DD00DEFB7C /* FirebaseAnalytics */; };
+		98CACFC32951D3DD00DEFB7C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 98CACFC22951D3DD00DEFB7C /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,9 @@
 		98088F8928E4AAAF002089D8 /* BusinessCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewController.swift; sourceTree = "<group>"; };
 		98088F8C28E4AFBF002089D8 /* BusinessCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewCell.swift; sourceTree = "<group>"; };
 		98088F8D28E4AFBF002089D8 /* BusinessCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessCardTableViewCell.xib; sourceTree = "<group>"; };
+		9825C6D4290E9AD800CCB822 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		9825C6D6290E9B3F00CCB822 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9825C6D8290E9C3800CCB822 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9830A3C728E3E10100BD51AA /* BusinessCardManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessCardManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9830A3CA28E3E10100BD51AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9830A3CC28E3E10100BD51AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +73,8 @@
 		9830A3F028E3E10200BD51AA /* BusinessCardManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9830A3FF28E3F66D00BD51AA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9830A40128E3F6E100BD51AA /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		984F09942965115C009A289C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		98A72700290E7E26006ECD5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A72704290E9091006ECD5D /* FirebaseAnalytics in Frameworks */,
+				98A72706290E9091006ECD5D /* FirebaseAuth in Frameworks */,
+				98CACFC12951D3DD00DEFB7C /* FirebaseAnalytics in Frameworks */,
+				98CACFC32951D3DD00DEFB7C /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,10 +142,10 @@
 				9830A3CA28E3E10100BD51AA /* AppDelegate.swift */,
 				9830A3CC28E3E10100BD51AA /* SceneDelegate.swift */,
 				9830A3CE28E3E10100BD51AA /* ViewController.swift */,
-				9830A3D028E3E10100BD51AA /* Main.storyboard */,
 				9830A3D628E3E10200BD51AA /* Assets.xcassets */,
 				9830A3D828E3E10200BD51AA /* LaunchScreen.storyboard */,
 				9830A3DB28E3E10200BD51AA /* Info.plist */,
+				98A72700290E7E26006ECD5D /* GoogleService-Info.plist */,
 				9830A3D328E3E10100BD51AA /* BusinessCardManager.xcdatamodeld */,
 			);
 			path = BusinessCardManager;
@@ -153,6 +171,8 @@
 		9830A3FD28E3F55F00BD51AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				984F09932964484F009A289C /* Setting */,
+				9830A3D028E3E10100BD51AA /* Main.storyboard */,
 				98A726FB290E7180006ECD5D /* Login */,
 				9830A3FE28E3F56900BD51AA /* Main */,
 			);
@@ -170,9 +190,20 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		984F09932964484F009A289C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				984F09942965115C009A289C /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		98A726FB290E7180006ECD5D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				9825C6D4290E9AD800CCB822 /* Login.storyboard */,
+				9825C6D6290E9B3F00CCB822 /* LoginViewController.swift */,
+				9825C6D8290E9C3800CCB822 /* SignUpViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -193,6 +224,12 @@
 			dependencies = (
 			);
 			name = BusinessCardManager;
+			packageProductDependencies = (
+				98A72703290E9091006ECD5D /* FirebaseAnalytics */,
+				98A72705290E9091006ECD5D /* FirebaseAuth */,
+				98CACFC02951D3DD00DEFB7C /* FirebaseAnalytics */,
+				98CACFC22951D3DD00DEFB7C /* FirebaseAuth */,
+			);
 			productName = BusinessCardManager;
 			productReference = 9830A3C728E3E10100BD51AA /* BusinessCardManager.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +302,9 @@
 				Base,
 			);
 			mainGroup = 9830A3BE28E3E10100BD51AA;
+			packageReferences = (
+				98A72702290E9091006ECD5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 9830A3C828E3E10100BD51AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,8 +323,10 @@
 			files = (
 				9830A3DA28E3E10200BD51AA /* LaunchScreen.storyboard in Resources */,
 				9830A3D728E3E10200BD51AA /* Assets.xcassets in Resources */,
+				9825C6D5290E9AD800CCB822 /* Login.storyboard in Resources */,
 				9830A3D228E3E10100BD51AA /* Main.storyboard in Resources */,
 				98088F8F28E4AFBF002089D8 /* BusinessCardTableViewCell.xib in Resources */,
+				98A72701290E7E26006ECD5D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,9 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9825C6D7290E9B3F00CCB822 /* LoginViewController.swift in Sources */,
+				984F09952965115C009A289C /* SettingViewController.swift in Sources */,
 				9830A3CF28E3E10100BD51AA /* ViewController.swift in Sources */,
 				98088F8A28E4AAAF002089D8 /* BusinessCardTableViewController.swift in Sources */,
 				9830A3CB28E3E10100BD51AA /* AppDelegate.swift in Sources */,
+				9825C6D9290E9C3800CCB822 /* SignUpViewController.swift in Sources */,
 				98088F8E28E4AFBF002089D8 /* BusinessCardTableViewCell.swift in Sources */,
 				9830A3D528E3E10100BD51AA /* BusinessCardManager.xcdatamodeld in Sources */,
 				9830A3CD28E3E10100BD51AA /* SceneDelegate.swift in Sources */,
@@ -658,6 +703,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		98A72702290E9091006ECD5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		98A72703290E9091006ECD5D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98A72702290E9091006ECD5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		98A72705290E9091006ECD5D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98A72702290E9091006ECD5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		98CACFC02951D3DD00DEFB7C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98A72702290E9091006ECD5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		98CACFC22951D3DD00DEFB7C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98A72702290E9091006ECD5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9830A3D328E3E10100BD51AA /* BusinessCardManager.xcdatamodeld */ = {

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>5088063215-8h61lcos1v88c922u3371hmro2u5ro09.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.5088063215-8h61lcos1v88c922u3371hmro2u5ro09</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCV8iN1_h0bNqBSRB_wiftpVxIKEggtvJ8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>5088063215</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.frank61003.BusinessCardManager</string>
+	<key>PROJECT_ID</key>
+	<string>businesscardmanager</string>
+	<key>STORAGE_BUCKET</key>
+	<string>businesscardmanager.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:5088063215:ios:add213ec3a99dc24feb51a</string>
+</dict>
+</plist>
