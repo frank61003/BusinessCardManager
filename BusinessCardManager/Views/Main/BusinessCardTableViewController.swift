@@ -9,27 +9,57 @@ import UIKit
 
 class BusinessCardTableViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+   
+    private let tableView = UITableView()
     var dict = Dictionary<AnyHashable, CGFloat>()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: "BusinessCardTableViewCell", bundle: nil), forCellReuseIdentifier: "BusinessCardTableViewCell")
+        setUI()
+        
+     
+    }
+    
+   
+    
+    
+    func setUI(){
+        self.view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addConstraints([
+            tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+        
+        
+        
+        
+        
+        
         
     }
     
 }
+
+
+
+
+
 extension BusinessCardTableViewController: UITableViewDataSource, UITableViewDelegate{
     
     //每一section個別的列數
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-       return 20
+       return 10
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 3
     
     }
         

@@ -9,28 +9,67 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    var mainPageViewController: MainPageViewController?
     
-    @IBOutlet weak var businessCardTypeSegment: UISegmentedControl!
-    @IBAction func changeContainerView(_ sender: UISegmentedControl) {
-        mainPageViewController?.setViewController(page: sender.selectedSegmentIndex)
+    private lazy var mainPageViewController = MainPageViewController()
+   
+    
+    
+    
+    private lazy var businessCardTypeSegment: UISegmentedControl = {
         
         
-    }
+        let items = ["全部", "公司", "餐廳", "其他"]
+        let segmentedControl = UISegmentedControl(items: items)
+        segmentedControl.backgroundColor = .red
+//                segmentedControl.addTarget(self, action: #selector(segmentAction(_:)), for: .valueChanged)
+        segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+                
+        return segmentedControl
+      }()
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .brown
+        self.navigationItem.title="名片"
+       
+       
+        setUI()
+        addChild(mainPageViewController)
+       
+       
+        
+        self.mainPageViewController.pageViewControllerDelegate = self
+        
     }
     
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    func setUI(){
+        self.view.addSubview(businessCardTypeSegment)
+        businessCardTypeSegment.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
+        businessCardTypeSegment.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        businessCardTypeSegment.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         
-        if let mainPageViewController = segue.destination as? MainPageViewController {
-            self.mainPageViewController = mainPageViewController
-            // 代理 pageViewController
-            self.mainPageViewController?.pageViewControllerDelegate = self
-            
-        }
+        self.view.addSubview(mainPageViewController.view)
+        mainPageViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        mainPageViewController.view.topAnchor.constraint(equalTo: businessCardTypeSegment.bottomAnchor).isActive = true
+        mainPageViewController.view.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        mainPageViewController.view.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
+        mainPageViewController.view.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
+        
+        let addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addBusinessCard))
+        self.navigationItem.rightBarButtonItems = [addButtonItem]
+        
+        
+    }
+    @objc func addBusinessCard(){
+        let addCardViewController = AddCardViewController()
+      
+        self.navigationController?.pushViewController(addCardViewController, animated: true)
          
     }
     

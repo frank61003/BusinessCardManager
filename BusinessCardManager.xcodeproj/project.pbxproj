@@ -10,6 +10,9 @@
 		98088F8A28E4AAAF002089D8 /* BusinessCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98088F8928E4AAAF002089D8 /* BusinessCardTableViewController.swift */; };
 		98088F8E28E4AFBF002089D8 /* BusinessCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98088F8C28E4AFBF002089D8 /* BusinessCardTableViewCell.swift */; };
 		98088F8F28E4AFBF002089D8 /* BusinessCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98088F8D28E4AFBF002089D8 /* BusinessCardTableViewCell.xib */; };
+		981805092A301AD000ADDD11 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981805082A301AD000ADDD11 /* MainTabBarViewController.swift */; };
+		9818050D2A301CF900ADDD11 /* BusinessCardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9818050C2A301CF900ADDD11 /* BusinessCardNavigationController.swift */; };
+		9818050F2A3025DD00ADDD11 /* SettingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9818050E2A3025DD00ADDD11 /* SettingNavigationController.swift */; };
 		9825C6D5290E9AD800CCB822 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9825C6D4290E9AD800CCB822 /* Login.storyboard */; };
 		9825C6D7290E9B3F00CCB822 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825C6D6290E9B3F00CCB822 /* LoginViewController.swift */; };
 		9825C6D9290E9C3800CCB822 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9825C6D8290E9C3800CCB822 /* SignUpViewController.swift */; };
@@ -29,8 +32,11 @@
 		98A72701290E7E26006ECD5D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98A72700290E7E26006ECD5D /* GoogleService-Info.plist */; };
 		98A72704290E9091006ECD5D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 98A72703290E9091006ECD5D /* FirebaseAnalytics */; };
 		98A72706290E9091006ECD5D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 98A72705290E9091006ECD5D /* FirebaseAuth */; };
+		98B93AFA299341950097A092 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 98B93AF9299341950097A092 /* FirebaseFirestoreSwift */; };
 		98CACFC12951D3DD00DEFB7C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 98CACFC02951D3DD00DEFB7C /* FirebaseAnalytics */; };
 		98CACFC32951D3DD00DEFB7C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 98CACFC22951D3DD00DEFB7C /* FirebaseAuth */; };
+		98EC78E029F3E7390067D27F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC78DF29F3E7390067D27F /* CustomTextField.swift */; };
+		98ECC9E12994A6EF00619C57 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ECC9E02994A6EF00619C57 /* AddCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,9 @@
 		98088F8928E4AAAF002089D8 /* BusinessCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewController.swift; sourceTree = "<group>"; };
 		98088F8C28E4AFBF002089D8 /* BusinessCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardTableViewCell.swift; sourceTree = "<group>"; };
 		98088F8D28E4AFBF002089D8 /* BusinessCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessCardTableViewCell.xib; sourceTree = "<group>"; };
+		981805082A301AD000ADDD11 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		9818050C2A301CF900ADDD11 /* BusinessCardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardNavigationController.swift; sourceTree = "<group>"; };
+		9818050E2A3025DD00ADDD11 /* SettingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingNavigationController.swift; sourceTree = "<group>"; };
 		9825C6D4290E9AD800CCB822 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		9825C6D6290E9B3F00CCB822 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9825C6D8290E9C3800CCB822 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +84,8 @@
 		9830A40128E3F6E100BD51AA /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		984F09942965115C009A289C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		98A72700290E7E26006ECD5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		98EC78DF29F3E7390067D27F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		98ECC9E02994A6EF00619C57 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98B93AFA299341950097A092 /* FirebaseFirestoreSwift in Frameworks */,
 				98A72704290E9091006ECD5D /* FirebaseAnalytics in Frameworks */,
 				98A72706290E9091006ECD5D /* FirebaseAuth in Frameworks */,
 				98CACFC12951D3DD00DEFB7C /* FirebaseAnalytics in Frameworks */,
@@ -122,6 +134,7 @@
 				9830A3E328E3E10200BD51AA /* BusinessCardManagerTests */,
 				9830A3ED28E3E10200BD51AA /* BusinessCardManagerUITests */,
 				9830A3C828E3E10100BD51AA /* Products */,
+				98B93AF8299341950097A092 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +151,7 @@
 		9830A3C928E3E10100BD51AA /* BusinessCardManager */ = {
 			isa = PBXGroup;
 			children = (
+				98EC78DE29F3E6E00067D27F /* Custom UI */,
 				9830A3FD28E3F55F00BD51AA /* Views */,
 				9830A3CA28E3E10100BD51AA /* AppDelegate.swift */,
 				9830A3CC28E3E10100BD51AA /* SceneDelegate.swift */,
@@ -171,6 +185,7 @@
 		9830A3FD28E3F55F00BD51AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				981805082A301AD000ADDD11 /* MainTabBarViewController.swift */,
 				984F09932964484F009A289C /* Setting */,
 				9830A3D028E3E10100BD51AA /* Main.storyboard */,
 				98A726FB290E7180006ECD5D /* Login */,
@@ -186,6 +201,8 @@
 				9830A3FF28E3F66D00BD51AA /* MainViewController.swift */,
 				9830A40128E3F6E100BD51AA /* MainPageViewController.swift */,
 				98088F8928E4AAAF002089D8 /* BusinessCardTableViewController.swift */,
+				98ECC9E02994A6EF00619C57 /* AddCardViewController.swift */,
+				9818050C2A301CF900ADDD11 /* BusinessCardNavigationController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -194,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				984F09942965115C009A289C /* SettingViewController.swift */,
+				9818050E2A3025DD00ADDD11 /* SettingNavigationController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -206,6 +224,21 @@
 				9825C6D8290E9C3800CCB822 /* SignUpViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		98B93AF8299341950097A092 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98EC78DE29F3E6E00067D27F /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				98EC78DF29F3E7390067D27F /* CustomTextField.swift */,
+			);
+			path = "Custom UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +262,7 @@
 				98A72705290E9091006ECD5D /* FirebaseAuth */,
 				98CACFC02951D3DD00DEFB7C /* FirebaseAnalytics */,
 				98CACFC22951D3DD00DEFB7C /* FirebaseAuth */,
+				98B93AF9299341950097A092 /* FirebaseFirestoreSwift */,
 			);
 			productName = BusinessCardManager;
 			productReference = 9830A3C728E3E10100BD51AA /* BusinessCardManager.app */;
@@ -351,14 +385,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98EC78E029F3E7390067D27F /* CustomTextField.swift in Sources */,
 				9825C6D7290E9B3F00CCB822 /* LoginViewController.swift in Sources */,
 				984F09952965115C009A289C /* SettingViewController.swift in Sources */,
+				981805092A301AD000ADDD11 /* MainTabBarViewController.swift in Sources */,
 				9830A3CF28E3E10100BD51AA /* ViewController.swift in Sources */,
 				98088F8A28E4AAAF002089D8 /* BusinessCardTableViewController.swift in Sources */,
 				9830A3CB28E3E10100BD51AA /* AppDelegate.swift in Sources */,
+				9818050D2A301CF900ADDD11 /* BusinessCardNavigationController.swift in Sources */,
 				9825C6D9290E9C3800CCB822 /* SignUpViewController.swift in Sources */,
 				98088F8E28E4AFBF002089D8 /* BusinessCardTableViewCell.swift in Sources */,
+				9818050F2A3025DD00ADDD11 /* SettingNavigationController.swift in Sources */,
 				9830A3D528E3E10100BD51AA /* BusinessCardManager.xcdatamodeld in Sources */,
+				98ECC9E12994A6EF00619C57 /* AddCardViewController.swift in Sources */,
 				9830A3CD28E3E10100BD51AA /* SceneDelegate.swift in Sources */,
 				9830A40228E3F6E100BD51AA /* MainPageViewController.swift in Sources */,
 				9830A40028E3F66D00BD51AA /* MainViewController.swift in Sources */,
@@ -543,7 +582,6 @@
 				INFOPLIST_FILE = BusinessCardManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -571,7 +609,6 @@
 				INFOPLIST_FILE = BusinessCardManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -725,6 +762,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 98A72702290E9091006ECD5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		98B93AF9299341950097A092 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98A72702290E9091006ECD5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 		98CACFC02951D3DD00DEFB7C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;

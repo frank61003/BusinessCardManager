@@ -26,16 +26,15 @@ class MainPageViewController: UIPageViewController {
         self.dataSource = self
         self.delegate = self
 
-        let allBusinessCardTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "BusinessCardTableViewController") as! BusinessCardTableViewController
-        allBusinessCardTableViewController.view.backgroundColor = UIColor.blue
+        let allBusinessCardTableViewController = BusinessCardTableViewController()
 
-        let companyBusinessCardTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "BusinessCardTableViewController") as! BusinessCardTableViewController
+        let companyBusinessCardTableViewController = UIViewController()
 
         companyBusinessCardTableViewController.view.backgroundColor = UIColor.green
-        let restaurantBusinessCardMessageTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "BusinessCardTableViewController") as! BusinessCardTableViewController
+        let restaurantBusinessCardMessageTableViewController = UIViewController()
         restaurantBusinessCardMessageTableViewController.view.backgroundColor = UIColor.red
         
-        let otherBusinessCardMessageTableViewController = self.storyboard?.instantiateViewController(withIdentifier: "BusinessCardTableViewController") as! BusinessCardTableViewController
+        let otherBusinessCardMessageTableViewController = UIViewController()
         otherBusinessCardMessageTableViewController.view.backgroundColor = UIColor.gray
 
         

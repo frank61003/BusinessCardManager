@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IN5-GO-q73">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IN5-GO-q73">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qd4-YZ-g8f">
-                                <rect key="frame" x="20" y="576" width="374" height="68"/>
+                                <rect key="frame" x="20" y="569" width="374" height="68"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbi-33-gNv">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -32,23 +33,17 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mi7-8x-GKH">
-                                <rect key="frame" x="180.5" y="674" width="53" height="62"/>
+                                <rect key="frame" x="177.5" y="667" width="59" height="69"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNL-22-cep">
-                                        <rect key="frame" x="0.0" y="0.0" width="53" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="登入"/>
-                                        <connections>
-                                            <action selector="loginBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PYX-Vi-fxm"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-ro-1CU">
-                                        <rect key="frame" x="0.0" y="31" width="53" height="31"/>
+                                        <rect key="frame" x="0.0" y="34.5" width="59" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="註冊"/>
-                                        <connections>
-                                            <action selector="signUpBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zUc-v3-aRi"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -65,8 +60,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="NUt-hE-xck"/>
                     <connections>
-                        <outlet property="emailTextField" destination="kbi-33-gNv" id="3Yn-Sv-j85"/>
-                        <outlet property="passwordTextField" destination="MV4-Bp-SW6" id="6QB-JC-6N0"/>
                         <segue destination="mWf-eS-Ltw" kind="show" id="iOe-7U-lNu"/>
                     </connections>
                 </viewController>
@@ -83,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="E4U-UF-aUJ">
-                                <rect key="frame" x="20" y="685" width="374" height="76"/>
+                                <rect key="frame" x="20" y="681.5" width="374" height="76"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ubF-Bi-nAT">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -108,7 +101,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGk-Pz-euX">
-                                <rect key="frame" x="20" y="781" width="374" height="31"/>
+                                <rect key="frame" x="20" y="777.5" width="374" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="註冊"/>
                                 <connections>
@@ -142,7 +135,7 @@
             <objects>
                 <navigationController storyboardIdentifier="LoginNavigationViewController" id="IN5-GO-q73" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R6v-Xg-tMM">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
